@@ -1,0 +1,17 @@
+<div class="mt-5">
+  <article>
+    <h1>
+      <%= @article.title %>
+      <small>
+        <a href="/articles/<%= @article[:id] %>/edit">
+          <i class="fa-solid fa-pencil"></i>
+        </a>
+        <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/<%= @article[:id] %>">
+          <i class="fa-solid fa-trash"></i>
+        </a>
+      </small>
+    </h1>
+    <hr>
+    <p><%= @article.content %></p>
+  </article>
+</div>
